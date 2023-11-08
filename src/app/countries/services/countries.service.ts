@@ -22,7 +22,6 @@ export class CountriesService {
       .pipe(
       map( countries => countries.length > 0 ? countries[0] : null ),
       catchError(()=> of(null)),
-      delay( 2000 ),
     )
   }
 
